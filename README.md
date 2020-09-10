@@ -5,7 +5,7 @@ Buildroot based Raspberry Pi 4 OS with Real Time Kernel
 
 This is how a system looks with running processes by default
 
-![htop(images/screenshot.jpg?raw=true "htop")
+![screenshot](images/screenshot.png?raw=true)
 
 ## Included Packages
 * Realtime Kernel 4.19
