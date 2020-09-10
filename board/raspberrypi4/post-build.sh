@@ -14,6 +14,7 @@ cat << EOF > ${TARGET_DIR}/etc/init.d/S99Modules
 modprobe spi_bcm2835
 modprobe snd_soc_bcm2835_i2s
 modprobe snd_soc_pisound
+modprobe snd-seq
 EOF
 
 chmod +x ${TARGET_DIR}/etc/init.d/S99Modules
