@@ -1,6 +1,12 @@
 # rpi4-rt-buildroot
 Buildroot based Raspberry Pi 4 OS with Real Time Kernel
 
+## Screenshot
+
+This is how a system looks with running processes by default
+
+![htop(images/screenshot.jpg?raw=true "htop")
+
 ## Included Packages
 * Realtime Kernel 4.19
 * NTP for Time Sync
