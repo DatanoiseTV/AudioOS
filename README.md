@@ -32,4 +32,6 @@ This is how a system looks with running processes by default
 3. make raspberrypi4rt_defconfig 
 4. copy boards/raspberrypi4/* to boards/raspberrypi4
 5. make (and drink a cup of tea)
+6. Copy RAW image output/image/sdcard.img to SD (using dd, etcher, ..)
+7. Boot Pi from SD and sign in via ssh root@pi.local (default pw for root is root)
 ```
