@@ -9,6 +9,8 @@ This is how a system looks with running processes by default
 
 ## Included Packages
 * Realtime Kernel 4.19
+* Avahi ZeroConf / mDNS
+* rngd for entropy gathering
 * NTP for Time Sync
 * Dropbear SSH Server & Client
 * dhcpcd DHCP client
