@@ -1,0 +1,22 @@
+config BR2_PACKAGE_PYTHON_SCIPY
+	bool "python-scipy"
+	depends on BR2_PACKAGE_PYTHON_NUMPY_ARCH_SUPPORTS
+	depends on BR2_PACKAGE_PYTHON3
+	depends on BR2_TOOLCHAIN_HAS_FORTRAN # lapack
+	select BR2_PACKAGE_LIBLAPACK
+	select BR2_PACKAGE_LIBLAPACK_FORCE_LAPACK
+	select BR2_PACKAGE_LAPACK_COMPLEX
+	select BR2_PACKAGE_PYTHON_NUMPY
+	help
+	  SciPy (pronounced "Sigh Pie") is open-source software for
+	  mathematics, science, and engineering. It includes modules
+	  for statistics, optimization, integration, linear algebra,
+	  Fourier transforms, signal and image processing, ODE solvers,
+	  and more.
+
+	  http://www.scipy.org/
+
+comment "python-scipy needs lapack, gfortran"
+	depends on !BR2_PACKAGE_PYTHON_NUMPY_ARCH_SUPPORTS
+	depends on !BR2_PACKAGE_PYTHON3
+	depends on !BR2_TOOLCHAIN_HAS_FORTRAN || !BR2_PACKAGE_LAPACK_COMPLEX
